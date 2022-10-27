@@ -11,6 +11,7 @@ app.use(express.json())
 app.use("/products", require("./routes/product"))
 app.use("/categories", require("./routes/categories"))
 
+
 app.get('/createdb', (req, res) => {
 
     let sql = 'CREATE DATABASE expressDB';
